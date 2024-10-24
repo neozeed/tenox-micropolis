@@ -55,7 +55,8 @@ main.o: patchlvl.h main.c
 
 tclxgdat.c: tclxgdat.y
 	$(YACC) tclxgdat.y
-	mv y.tab.c tclxgdat.c
+#	mv y.tab.c tclxgdat.c
+	mv tclxgdat.tab.c tclxgdat.c
 
 ../tcl: ../libtcl.a made.tmp 
 	$(RANLIB_CMD) ../libtcl.a

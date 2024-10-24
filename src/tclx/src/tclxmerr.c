@@ -37,9 +37,12 @@ int
 matherr (except)
     struct exception *except;
 {
+	//this is missing somehow.
+#if 0
     if (Tcl_MathError (except->name, except->type))
         return 1;
     else
+#endif
         return 0;
 }
 

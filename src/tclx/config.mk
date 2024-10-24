@@ -80,8 +80,9 @@ DO_STRIPPING=false
 AR=ar
 XCFLAGS=
 XLDFLAGS=
-YACC=yacc
+#YACC=yacc
 #YACC=bison -b y
+YACC=bison16
 
 #------------------------------------------------------------------------------
 # If C++ is to be used these should be used.  Specifying CPLUSOBJS includes the

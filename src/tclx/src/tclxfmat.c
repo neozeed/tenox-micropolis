@@ -121,6 +121,7 @@ ReturnFPMathError (interp)
 {
     char *errorMsg;
 
+#if 0
     switch (G_errorType) {
        case DOMAIN: 
            errorMsg = "domain";
@@ -139,6 +140,9 @@ ReturnFPMathError (interp)
            errorMsg = "loss of significance";
            break;
     }
+#else
+           errorMsg = "something has happened! floaing point tclxfmat.c";
+#endif
     Tcl_AppendResult (interp, "floating point ", errorMsg, " error",
                       (char *) NULL);
     G_gotTclFPMathErr = FALSE;  /* Clear the flag. */

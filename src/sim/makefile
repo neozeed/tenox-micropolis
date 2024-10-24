@@ -4,6 +4,7 @@ TKHOME = ../tk
 TCLXHOME = ../tclx
 TCLLIBRARY = /usr/local/lib/tcl
 TKLIBRARY = /usr/local/lib/tk
+XPMHOME = ../xpm
 
 CC = cc
 
@@ -27,7 +28,7 @@ INCLUDES = \
 	-I$(TCLHOME) \
 	-I$(TCLXHOME)/src \
 	-I$(TKHOME) \
-	-I../xpm
+	-I$(XPMHOME)
 
 CPPFLAGS = $(INCLUDES)
 
@@ -36,7 +37,7 @@ LIBS =	$(TCLXHOME)/libtk.a \
 	-lm \
         -lX11 \
         -lXext \
-	../xpm/libXpm.a
+	$(XPMHOME)/libXpm.a
 
 SRCS = \
 	sim.c \

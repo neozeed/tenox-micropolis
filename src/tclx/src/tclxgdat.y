@@ -228,7 +228,7 @@ time_t daylcorr(future, now) time_t future, now;
 
 static char *lptr;
 
-static
+//static
 yylex()
 {
 #ifndef YYSTYPE
